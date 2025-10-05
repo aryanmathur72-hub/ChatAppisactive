@@ -31,7 +31,7 @@ export const AuthProvider= ({children})=>{
         try {
             // console.log("login function in Authcontext",state);
             const {data}=await axios.post(`/api/auth/${state}`,credentials);
-            console.log("login data",data);
+            // console.log("login data",data);
             if(data.success){
                 setAuthUser(data.userData);
                 connectSocket(data.userData);
