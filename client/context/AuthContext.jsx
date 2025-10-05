@@ -55,6 +55,7 @@ export const AuthProvider= ({children})=>{
         setOnlineUsers([]);
         axios.defaults.headers.common["token"]=null;
         toast.success("Logged out successfully");
+        //if socket is null means you call disconnect func throw error , can handle if(socket) socket.disconnect();
         socket.disconnect();
     }
 
