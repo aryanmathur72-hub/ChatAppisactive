@@ -12,7 +12,7 @@ const Sidebar = () => {
 
   const [input,setInput]=useState("");
 
-  const [menuopen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const filteredUsers=input ? users.filter((user)=>user.fullName.toLowerCase().includes(input.toLowerCase())) : users;
 
@@ -34,7 +34,7 @@ const Sidebar = () => {
 
         
           <div className="relative py-2 group"
-           onClick = {() => setMenuOpen(!menuopen)}>
+           onClick = {() => setMenuOpen(!menuOpen)}>
             <img
               src={assets.menu_icon}
               alt="Menu"
