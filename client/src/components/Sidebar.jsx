@@ -52,9 +52,9 @@ const Sidebar = () => {
               onClick={() => setMenuOpen(!menuOpen)}
             />
             <div
-              className={`absolute top-full right-0 z-20 w-32 p-5 rounded-md bg-[#282142] border border-gray-600 text-gray-100 hidden group-hover:block sm:${
-                menuOpen ? "block" : "hidden"
-              } transition-all duration-200 ease-in-out`}
+              className={`absolute top-full right-0 z-20 w-32 p-5 rounded-md bg-[#282142] border border-gray-600 text-gray-100 transition-all duration-200 ease-in-out ${
+                menuOpen ? "block" : "hidden group-hover:block"
+              }`}
             >
               <p
                 onClick={() => navigate("/profile")}
